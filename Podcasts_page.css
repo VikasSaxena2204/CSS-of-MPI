@@ -1,0 +1,289 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(4, 0, 10);
+    color: white;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+    text-indent: 20px;
+    display: flex;
+    align-items: center;
+}
+
+ul,li,a,legend{
+    background-color: rgb(11, 5, 20);
+}
+
+li>div{
+    padding: 5px 10px;
+}
+
+#left_sidebar>div{
+    background-color: rgb(11, 5, 20);
+}
+
+#left_sidebar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16.3%;
+    height: 100%;
+    background-color: rgb(11, 5, 20);
+    padding: 5px;
+}
+
+#logo{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+
+#left_sidebar>img{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+#left_sidebar>ul>legend{
+    font-size: large;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding: 0;
+}
+
+#left_sidebar>ul>li>img{
+    border-radius: 50px;
+}
+
+#left_sidebar>ul>li>a{
+    font: menu;
+}
+
+#theme{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#theme_name{
+    font: caption;
+    background-color: rgb(11, 5, 20);
+}
+
+input[type="checkbox"] {
+    margin: auto 10px;
+    position: relative;
+    width:60px;
+    height:20px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, #000);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  }
+  
+  input:checked[type="checkbox"]:nth-of-type(1) {
+    background: linear-gradient(0deg, #e67e22, #f39c12);
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  }
+  
+  input:checked[type="checkbox"]:nth-of-type(2) {
+    background: linear-gradient(0deg, #70a1ff, #1e90ff);
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  }
+  
+  input[type="checkbox"]:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:40px;
+    height:20px;
+    background: linear-gradient(0deg, #000, #6b6b6b);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98,.96);
+    transition:.5s;
+  }
+  
+  input:checked[type="checkbox"]:before {
+    left: 20px;
+  }
+  
+  input[type="checkbox"]:after{
+    content:'';
+    position:absolute;
+    top:calc(50% - 2px);
+    left:35px;
+    width:2px;
+    height:4px;
+    background: linear-gradient(0deg, #6b6b6b, #000);
+    border-radius: 50%;
+    transition:.5s;
+  }
+  
+  input:checked[type="checkbox"]:after {
+    left:55px;
+  }
+  
+
+#right_sidebar{
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 22%;
+    height: 89%;
+    background-color: rgb(11, 5, 20);
+    padding: 15px;
+}
+
+#main_content{
+    position: absolute;
+    padding: 20px;
+    top: 80px;
+    left: 16.3%;
+    right: 22%;
+    height: 89%;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 16.3%;
+    right: 0;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(20, 16, 26);
+}
+
+header>div{
+    margin: auto 3%;
+    background-color: rgb(20, 16, 26);
+}
+
+header>div>a{
+    font: caption;
+    color: grey;
+    background-color: rgb(20, 16, 26);
+}
+
+#upgrade_plan{
+    margin-left: 40%;
+}
+
+#search_bar{
+    width: 80%;
+    border: 1px solid rgba(128, 128, 128, 0.438);
+    text-align: center;
+    font-size: small;
+    border-radius: 20px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+#search_button{
+    position: absolute;
+    padding: 0;
+    border: 1px solid rgba(128, 128, 128, 0.438);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#logo,
+#quick_search,
+#podcasters,
+#trending_podcasts,
+#recently_played,
+#most_popular{
+    font-size: 19px;
+}
+
+#podcasters,
+#quick_search{
+    background-color: rgb(11, 5, 20);
+}
+
+#right_sidebar>ul>li>img{
+    border-radius: 50px;
+}
+
+#right_sidebar>ul>li>p{
+    background-color: rgb(11, 5, 20);
+    margin: 5px auto;
+}
+
+#right_sidebar>ul{
+    margin: 50px auto;
+}
+
+#player{
+    margin-left: 15%;
+    width: 67%;
+    height: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    background-image: url("podcast_images/player.PNG");
+}
+
+#player_details,
+#player_details>span,
+#song_name,
+#song_details,
+#banner>div
+{
+    color: rgba(245, 222, 179, 0); /* Just to check the visibility */
+    background-color: rgba(255, 255, 0, 0);
+}
+
+.recents{
+    display: flex;
+    margin: 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#banner{
+    margin: 4% 20%;
+    padding: 25px;
+    border: 3px solid white;
+    height: 30%;
+    width: 55%;
+    border-radius: 15px;
+    background-image: url("podcast_images/banner.PNG");
+    background-repeat: no-repeat;
+}
+
+.songs_and_singers::first-line{
+    font-size: 14px;
+}
+
+button{
+    border-radius: 20px;
+    background-color: blue;
+    padding: 3px 20px;
+    font-size: 10px;
+}
+
+#left_sidebar>ul>li{
+    margin: 20px auto;
+}
+
+.most_popular>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.podcast_image>img,
+.most_popular>div>div>img{
+    border-radius: 10px;
+}
